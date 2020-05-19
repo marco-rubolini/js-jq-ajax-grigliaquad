@@ -24,10 +24,6 @@
     position: relative;
 }
 
-.quadrato:hover {
-    background-color: grey;
-}
-
 .yellow {
     background-color: yellow;
 }
