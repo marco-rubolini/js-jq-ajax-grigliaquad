@@ -9,8 +9,9 @@ $('.container .griglia').on('click', '.quadrato', function(){
             console.log(data);
             var numero = data.response;
             console.log('Numero casuale ricevuto dalle API: ' + numero);
+            console.log(numero);
+            $(prova).append('<p>' + numero + '</p>');
             coloraQuadrato(numero, prova);
-
         },
         'error': function() {
             alert('si è verificato un errore!')

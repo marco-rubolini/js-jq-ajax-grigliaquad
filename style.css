@@ -21,6 +21,7 @@
     border: 1px solid black;
     float: left;
     cursor: pointer;
+    position: relative;
 }
 
 .quadrato:hover {
@@ -33,4 +34,11 @@
 
 .green {
     background-color: green;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
