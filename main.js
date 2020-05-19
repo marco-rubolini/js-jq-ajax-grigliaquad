@@ -10,8 +10,14 @@ $('.container .griglia').on('click', '.quadrato', function(){
             var numero = data.response;
             console.log('Numero casuale ricevuto dalle API: ' + numero);
             console.log(numero);
-            $(prova).append('<p>' + numero + '</p>');
-            coloraQuadrato(numero, prova);
+            if (prova.hasClass('yellow') || prova.hasClass('green')) {
+                alert('Quadrato già cliccato')
+            } else {
+                $(prova).append('<p>' + numero + '</p>');
+                coloraQuadrato(numero, prova);
+            }
+            // $(prova).append('<p>' + numero + '</p>');
+            // coloraQuadrato(numero, prova);
         },
         'error': function() {
             alert('si è verificato un errore!')
